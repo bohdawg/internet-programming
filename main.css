@@ -1,0 +1,51 @@
+body{
+	margin: 0;
+	padding: 0 25vw;
+}
+
+#capital {
+	text-align: center;
+	cursor: default;
+}
+
+h2 {
+	font-family: Arial, sans-serif;
+	font-size: 2em;
+	color: black;
+	margin: 20px 0 10px;
+	
+}
+
+#capital p {
+	font-family: Georgia, serif;
+	font-size: 1em;
+	color: #333333;
+	text-decoration: underline;
+	margin: 0 0 10px;
+}
+
+#links-block h3 {
+	font-family: Arial, sans-serif;
+	font-size: 1.5em;
+}
+
+#links li {
+	display: inline-block;
+	margin: 1em 2em;
+	font-size: 20px;
+	list-style: none;
+}
+
+footer {
+	position: fixed;
+	width: 100vw;
+	height: 10vh;
+	background: linear-gradient(90deg, #31163A, #4C235B);
+	left: 0;
+	bottom: 0;
+	color: white;
+	align-content: center;
+	padding-left: 20px;
+	font-size: 1.25em;
+	cursor: default;
+}
