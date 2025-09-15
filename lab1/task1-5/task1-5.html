@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="uk">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, inital-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <a href="../lab1.html">На головну</a>
+        <script>
+                function calculation() {
+                    let x = 12;
+                    let y = 3;
+                    let result = (x / y) + (y**2) / (1 - x * y);
+                    alert("Result: " + result);
+                }
+                function onSelectFun() {
+                    let onSelectEcho = document.getElementById('onSelectEcho');
+                    let onSelectTrig = document.getElementById('onSelectTrig');
+                    onSelectEcho.value = onSelectTrig.value;
+                }
+                function onMouseOutFun() {
+                    let onMoutTrig = document.getElementById('onSelectTrig');
+                    onMoutTrig.style.backgroundColor = 'lime';
+                }
+                function formulaSolvingTask4() {
+                    let x, y, res;
+                    x = parseInt(document.getElementById('t_x').value);
+                    y = parseInt(document.getElementById('t_y').value);
+                    res = document.getElementById('t_res');
+                    if (x * y < -100) {
+                        res.value = x / (2 * y);
+                    }
+                    else if (x * y > 20) {
+                        res.value = x**2 - x*y;
+                    }
+                    else {
+                        res.value = x**3 + 2;
+                    }
+                }
+                function factorial(n) {
+                    if (n == 0) return 1;
+                    return n * factorial(n - 1);
+                }
+                function formulaSolvingTask5() {
+                    let x, y, res;
+                    x = parseInt(document.getElementById('l_x').value);
+                    y = parseInt(document.getElementById('l_y').value);
+                    res = document.getElementById('l_res');
+                    let sum = 0;
+                    for (let i = 3; i <= 6; i++) {
+                        sum += (-1)**(i + 1) * (x - y) / factorial(i);
+                    }
+                    res.value = sum;
+                }
+            </script>
+        <section>
+            <h3>Завдання 1</h3>
+            <p>Це звичайний HTML абзац.</p>
+            <script>
+                document.write("Привіт! Мене звати Леонідов Богдан Дмитрович. Я студент групи ІПЗ-23")
+            </script>
+            <p>Знову звичайний HTML абзац.</p>
+            <form>
+                <input type="button" value="Click me" onClick="alert('Я народився 06.01.2007 року в місті Краматорськ')">
+            </form>
+        </section>
+        <section>
+            <h3>Завдання 2</h3>
+            <strong>Формула:</strong>
+            <div>
+                <var>x</var>/<var>y</var>
+                +
+                <span>
+                    <span><var>y</var><sup>2</sup></span>
+                    /
+                    <span>(1 - <var>x</var><var>y)</var></span>
+                </span>
+            </div>
+            <form>
+                <input type="button" value="Calculate" onClick="calculation()">
+            </form>
+        </section>
+        <section>
+            <h3>Завдання 3</h3>
+            <form>
+                <input type="text" onselect="onSelectFun()" onmouseout="onMouseOutFun()" id="onSelectTrig">
+                <input type="text" id="onSelectEcho">
+            </form>
+        </section>
+        <section>
+            <h3>Завдання 4</h3>
+            <img src="task4-formula.png" alt="Формула">
+            <form>
+                <var>x</var>:<input type="text" id="t_x" value="10">
+                <var>y</var>:<input type="text" id="t_y" value="-3">
+                <label for="t_res">
+                    Відповідь: 
+                </label>
+                <input type="text" id="t_res" disabled>
+                <input type="button" onclick="formulaSolvingTask4()" value="Розрахувати">
+            </form>
+        </section>
+        <section>
+            <h3>Завдання 5</h3>
+            <img src="task5-formula.png" alt="Формула">
+            <form>
+                <var>x</var>:<input type="text" id="l_x" value="13">
+                <var>y</var>:<input type="text" id="l_y" value="7">
+                <label for="l_res">
+                    Відповідь: 
+                </label>
+                <input type="text" id="l_res" disabled>
+                <input type="button" onclick="formulaSolvingTask5()" value="Розрахувати">
+            </form>
+        </section>
+    </body>
+</html>

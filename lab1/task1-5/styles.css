@@ -1,0 +1,32 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    text-align:  center;
+    font-size: 16pt;
+}
+
+h3 {
+    font-size: 16pt;
+    font-family: "Arial Black";
+}
+
+section {
+    margin: 4rem 0;
+}
+
+input[type="button"] {
+    width: fit-content;
+    height: auto;
+    padding: 10px;
+    border: 1px solid red;
+    background-color: cyan;
+    border-radius: 10px;
+    outline: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    margin-top: 15px;
+}

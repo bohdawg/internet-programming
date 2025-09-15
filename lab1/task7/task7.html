@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Завдання №7</title>
+</head>
+<body>
+    <form>
+        <select name="productName" id="productName">
+            <option value="Лампа">Лампа</option>
+            <option value="Лимон">Лимон</option>
+            <option value="Блендер">Блендер</option>
+        </select>
+        <input type="button" value="Дізнатися" onclick="showProductInfo()">
+        <input type="button" value="Загальна сума" onclick="getGeneralCost()">
+        <div id="table-section"></div>
+        <div id="sum-section"></div>
+        <a href="../lab1.html">На головну</a>
+    </form>
+    <script>
+        let product = ["Лампа", "Лимон", "Блендер"];
+        let cost = [150, 30, 1999];
+        let quantity = [10, 200, 3];
+        let table;//глобальна змінна для оновлення таблиці
+        let pGeneralSum;//глобальна змінна для оновлення загальної суми
+        let productName;
+        const tableSection = document.getElementById('table-section');
+        const sumSection = document.getElementById('sum-section');
+        function showProductInfo() {
+            productName = document.getElementById('productName').value;
+            const index = product.indexOf(productName);
+            if (index !== -1) {
+                if (table) tableSection.removeChild(table);
+                table = document.createElement('table');
+                table.border = "1";
+                const thead = document.createElement('thead');
+                const headerRow = document.createElement('tr');
+                const headers = ['Назва товару', 'Ціна (грн)', 'Кількість'];
+                headers.forEach(text => {
+                    const th = document.createElement('th');
+                    th.textContent = text;
+                    headerRow.appendChild(th);
+                });
+                thead.appendChild(headerRow);
+                table.appendChild(thead);
+                const tbody = document.createElement('tbody');
+                const dataRow = document.createElement('tr');
+                const rowData = [product[index], cost[index], quantity[index]];
+                rowData.forEach(data => {
+                    const td = document.createElement('td');
+                    td.textContent = data;
+                    dataRow.appendChild(td);
+                });
+                tbody.appendChild(dataRow);
+                table.appendChild(tbody);
+                tableSection.appendChild(table);
+            } else {
+                alert("Товар не знайдено.");
+            }
+        }
+        function getGeneralCost() {
+            const index = product.indexOf(productName);
+            if (index !== -1) {
+                if (pGeneralSum) sumSection.removeChild(pGeneralSum);
+                pGeneralSum = document.createElement('p');
+                pGeneralSum.textContent = `Загальна: ${quantity[index] * cost[index]}`;
+                sumSection.appendChild(pGeneralSum);
+            }
+        }
+    </script>
+</body>
+</html>
