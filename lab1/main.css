@@ -3,6 +3,10 @@ body{
 	padding: 0 25vw;
 }
 
+body > a {
+	float: right;
+}
+
 #capital {
 	text-align: center;
 	cursor: default;
