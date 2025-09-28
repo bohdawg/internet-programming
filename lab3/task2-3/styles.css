@@ -1,0 +1,68 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    z-index: 1;
+}
+
+body {
+    height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #302c3a;
+}
+
+#monitor {
+    resize: none;
+    overflow-x: hidden;
+    overflow-y: auto;
+    width: 50%;
+    height: 50%;
+    padding: 1%;
+    border: 0;
+    outline: none;
+    border-radius: 12px;
+    background-color: #f2f2ec;
+    font-family: monospace;
+    font-size: 2rem;
+}
+
+#keyboard {
+    width: 100%;
+}
+
+.row {
+    width: 100%;
+    text-align: center;
+}
+
+.key {
+    padding: 1.5%;
+    font-size: 1em;
+    border: 1px solid #302c3a;
+    background-color: #f2f2ec;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.key:nth-child(3n+1) {
+    background-color: #e7e7e4;
+}
+
+.key:nth-child(3n+2) {
+    background-color: #ddddd9;
+}
+
+.key:active {
+    box-shadow: inset 0 0 30px gray;
+}
+
+.row:last-child .key {
+    padding-left: 20%;
+    padding-right: 20%;
+}

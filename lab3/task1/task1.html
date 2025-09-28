@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Завдання №1</title>
+</head>
+<body>
+    <form onchange="calculateArea()">
+        <label>
+            Висота:
+            <input type="number" name="height" id="rhombus-height" value="0" min="0">
+        </label>
+        <label>
+            Довжина сторони:
+            <input type="number" name="side" id="rhombus-side" value="0" min="0">
+        </label>
+        <label>
+            Площа:
+            <output name="result" for="rhombus-height rhombus-side">0</output>
+        </label>
+    </form>
+    <script src="main.js"></script>
+</body>
+</html>

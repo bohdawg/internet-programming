@@ -1,0 +1,28 @@
+ul {
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+li {
+    cursor: pointer;
+    user-select: none;
+}
+
+.nested {
+    display: none;
+}
+
+.active {
+    display: block;
+}
+
+.caret::before {
+    content: "▶ ";
+    display: inline-block;
+    margin-right: 6px;
+    transform: rotate(0deg);
+    transition: transform 0.2s ease;
+}
+.caret-down::before {
+    transform: rotate(90deg);
+}
