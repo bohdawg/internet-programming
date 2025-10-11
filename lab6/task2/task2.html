@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Завдання №2</title>
+</head>
+<body>
+    <a href="../lab6.html">На головну</a>
+    <form name="login-form">
+        <label title="Адреса електронної пошти повинна містити @pnu.edu.ua">
+            <span>Email: </span>
+            <input type="email" name="email" id="email" data-regex-pattern="^([a-z0-9]+)(\.[a-z0-9]+)*@pnu\.edu\.ua$" data-regex-flags="i" placeholder="test@pnu.edu.ua">
+        </label>
+        <label title="Ім'я повинне починатися з великої літери.">
+            <span>Ім'я: </span>
+            <input type="text" name="name" id="name" data-regex-pattern="^[A-ZА-ЯІЇЄҐ][a-zа-яіїєґ']+$" data-regex-flags="u" placeholder="Іван">
+        </label>
+        <label title="Прізвище повинне складатися з великих літер.">
+            <span>Прізвище: </span>
+            <input type="text" name="surname" id="surname" data-regex-pattern="^[A-ZА-ЯІЇЄҐ]+$" data-regex-flags="u" placeholder="ДАВИДЮК">
+        </label>
+        <label title="Логін не повинен містити літери не латинської абетки.">
+            <span>Логін: </span>
+            <input type="text" name="login" id="login" data-regex-pattern="^\w+$" data-regex-flags="" placeholder="Mylogin123">
+        </label>
+        <label  title="Пароль повинен складатися з великих та малих літер, цифр та спеціальних знаків і бути не меншим за 8 символів.">
+            <span>Пароль: </span>
+            <input type="password" name="password" id="password" data-regex-pattern="^(?=.*\p{L})(?=.*\d)(?=.*[_\-!@#$%^&*])[\p{L}\d_\-!@#$%^&*]{8,}$" data-regex-flags="ui" placeholder="Passw0r$">
+        </label>
+        <label title="Поштовий індекс повинен складатися з 5 цифр.">
+            <span>Поштовий індекс: </span>
+            <input type="text" name="post-index" id="post-index" data-regex-pattern="^\d{5}$" data-regex-flags="" placeholder="12345">
+        </label>
+        <button type="button">Перевірити</button>
+    </form>
+    <script src="main.js"></script>
+</body>
+</html>

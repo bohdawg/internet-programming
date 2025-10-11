@@ -1,0 +1,80 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    z-index: 1;
+}
+
+body {
+    height: 100dvh;
+    justify-items: center;
+    align-content: center;
+
+    background-color: rgb(14, 14, 80);
+    color: whitesmoke;
+
+    font-family: 'Times New Roman', serif;
+    font-size: 40px;
+}
+
+form {
+    height: 70%;
+    width: max-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+label {
+    width: 100%;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    position: relative;
+}
+
+label span {
+    width: min-content;
+}
+
+input {
+    font: inherit;
+    color: inherit;
+    background: transparent;
+    border: 0;
+    border-bottom: 3px solid white;
+    outline: 0;
+}
+
+input::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.input--correct::after {
+    content: '✔';
+    position: absolute;
+    right: -40px;
+    bottom: -5px;
+    font-size: 48px;
+    color: lime;
+    z-index: 100;
+}
+
+.input--wrong::after {
+    content: '✖';
+    position: absolute;
+    right: -40px;
+    bottom: -5px;
+    font-size: 48px;
+    color: red;
+    z-index: 100;
+}
+
+button {
+    padding: 2%;
+    font-size: 2rem;
+    justify-self: flex-end;
+}

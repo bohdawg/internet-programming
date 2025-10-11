@@ -1,0 +1,50 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    z-index: 1;
+}
+
+body {
+    height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    background-color: rgb(14, 14, 80);
+    color: whitesmoke;
+
+    font-family: 'Times New Roman', serif;
+    font-size: 40px;
+}
+
+#input-email {
+    font: inherit;
+    color: inherit;
+    text-align: center;
+    background: transparent;
+    border: 0;
+    border-bottom: 3px solid white;
+    outline: 0;
+}
+
+#input-email::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+#output-container {
+    width: 100dvw;
+    height: fit-content;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+
+.regex-group:hover {
+    color: red;
+    cursor: default;
+}
