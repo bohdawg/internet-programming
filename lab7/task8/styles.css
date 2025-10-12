@@ -1,0 +1,44 @@
+body {
+    margin: 0;
+    height: 100dvh;
+    align-content: center;
+    justify-items: center;
+    background-color: #0d0d4f;
+    color: #eac300;
+    font-family: 'Georgia', 'Times New Roman', serif;
+    font-size: 5rem;
+}
+
+form {
+    justify-items: inherit;
+    text-align: center;
+}
+
+input {
+    font-size: 3rem;
+    color: white;
+    background-color: transparent;
+    border: none;
+    border-bottom: 3px solid white;
+    outline: none;
+    text-align: center;
+}
+
+button {
+    display: block;
+    font-size: 2rem;
+    margin-top: 4rem;
+    padding: 2%;
+    background: linear-gradient(45deg, #eac300, #ea9c00);
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+button:hover {
+    box-shadow: 0px 0px 20px 5px #eac300;
+}
+
+p {
+    height: 5rem;
+}
