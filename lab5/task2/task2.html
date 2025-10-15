@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Зміна теми + Модальне вікно</title>
+</head>
+<body>
+
+    <nav>
+        <div class="nav-links" id="navLinks">
+            <a href="../lab5.html">Головна</a>
+            <a href="../task1/task1.html">Завдання №1</a> 
+            <a href="#">Про мене</a> 
+        </div>
+
+        <div class="burger" id="burger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </nav>
+
+  <div class="container">
+    <h1>Привіт!</h1>
+    <button id="themeToggle">Змінити тему</button>
+    <button id="showModalBtn">Показати повідомлення</button>
+  </div>
+
+  <div id="modalOverlay" class="modal-overlay">
+    <div class="modal">
+      <span class="close-btn" id="closeModalBtn">&times;</span>
+      <h2>Повідомлення</h2>
+      <p>Це просте модальне вікно.</p>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
