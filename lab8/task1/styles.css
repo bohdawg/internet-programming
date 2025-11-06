@@ -1,0 +1,23 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100dvh;
+    align-content: center;
+}
+
+time {
+    display: block;
+    text-align: center;
+    font-size: 48pt;
+}
+
+label {
+    display: block;
+    text-align: center;
+    margin-top: 1%;
+    font-size: 16pt;
+}
