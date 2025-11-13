@@ -1,0 +1,33 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    z-index: 1;
+}
+
+body {
+    height: 100dvh;
+    text-align: center;
+    align-content: center;
+    overflow: hidden;
+}
+
+h1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 3rem;
+}
+
+#ball {
+    display: block;
+    width: .5rem;
+    height: .5rem;
+    background-color: red;
+    border-radius: 50%;
+    position: absolute;
+    left: 23.8%;
+    top: 46%;
+    z-index: 0;
+    mix-blend-mode: color-dodge;
+}
