@@ -1,0 +1,24 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100dvh;
+    align-content: center;
+    justify-items: center;
+    text-align: center;
+}
+
+.makeRed:hover {
+    color: red;
+    cursor: default;
+}
+
+.divClicked {
+    background-color: cyan;
+    border: 3px groove black;
+}
