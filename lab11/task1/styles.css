@@ -1,0 +1,23 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100dvh;
+    justify-items: center;
+    align-content: center;
+    text-align: center;
+}
+
+.panel {
+    padding: 15px;
+    background-color: #e0e0e0;
+    margin-bottom: 15px;
+}
+#msg {
+    color: darkblue;
+}

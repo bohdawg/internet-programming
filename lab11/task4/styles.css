@@ -1,0 +1,10 @@
+.item {
+    padding: 5px;
+    margin: 3px 0;
+    border: 1px solid #999;
+}
+
+.modified {
+    background-color: pink;
+    font-weight: bold;
+}

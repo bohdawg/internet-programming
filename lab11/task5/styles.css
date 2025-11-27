@@ -1,0 +1,12 @@
+.result {
+    padding: 10px;
+    margin-top: 10px;
+    border: 2px solid #555;
+    background: #f0f0f0;
+    white-space: pre-line;
+}
+
+button {
+    margin-right: 8px;
+    margin-bottom: 8px;
+}
