@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Завдання №1</title>
+</head>
+<body>
+<h1>Завдання №1</h1>
+<a href="../lab12.html">На головну</a>
+<section>
+    <h2>1. .fadeTo()</h2>
+    <div id="b1" class="box">fadeTo()</div>
+    <div class="btns">
+        <button data-action="fadeTo-0.3">До 30%</button>
+        <button data-action="fadeTo-0.8">До 80% (slow)</button>
+        <button data-action="fadeTo-1-cb">До 100% + alert</button>
+    </div>
+</section>
+
+<section>
+    <h2>2. .fadeToggle()</h2>
+    <div id="b2" class="box">fadeToggle()</div>
+    <div class="btns">
+        <button data-action="fadeToggle-1500">1.5 сек</button>
+        <button data-action="fadeToggle-fast">швидко</button>
+    </div>
+</section>
+
+<section>
+    <h2>3. .finish()</h2>
+    <div id="b3" class="box">finish()</div>
+    <div class="btns">
+        <button id="startLong">Запустити довгу чергу</button>
+        <button id="stopNow">.finish() – зупинити</button>
+    </div>
+</section>
+
+<section>
+    <h2>4. .slideToggle()</h2>
+    <div id="b4" class="box">slideToggle()</div>
+    <div class="btns">
+        <button data-action="slideToggle">slideToggle()</button>
+    </div>
+</section>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
